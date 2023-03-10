@@ -1,30 +1,58 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
-<link rel="stylesheet" type="text/css" href="styles.css"/>
+    <style type="text/css">
+        body {
+            background-color: white;
+            margin: auto;
+            padding: auto;
+        }
+
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        form {
+            display: table;
+        }
+
+        input {
+            display: table-cell;
+        }
+
+        label {
+            display: table-row;
+        }
+    </style>
 </head>
+
 <body>
-    <a href="index.html">Powrot</a><br/><br/>
-    <form action="*">  
-        <label>Imię:</label><input type="text"/><br/>
-        <label>Nazwisko:</label><input type="text"/><br/>
-        <label>Ulica:</label><input type="text"/><br/>
-        <label>Miasto:</label><input type="text"/><br/>
-        <label>Numer domu:</label><input type="number"/><br/>
-        <label>Numer mieszkania:</label><input type="number"/><br/>
-        <label>Prawo jazdy:</label><input type="checkbox"/><br/>
+    <a href="index.html">Powrot</a><br /><br />
+    <form action="*">
+        <label>Imię:</label><input type="text" /><br />
+        <label>Nazwisko:</label><input type="text" /><br />
+        <label>Ulica:</label><input type="text" /><br />
+        <label>Miasto:</label><input type="text" /><br />
+        <label>Numer domu:</label><input type="number" /><br />
+        <label>Numer mieszkania:</label><input type="number" /><br />
+        <label>Prawo jazdy:</label><input type="checkbox" /><br />
         <label>Płeć:</label><select>
             <option>Mężczyzna</option>
             <option>Kobieta</option>
-            <option>Inne</option></select><br/>
-        <label>Uwagi:</label><textarea></textarea><br/>
-        <label>Numer telefonu:</label><input type="tel"/><br/>
-        <label>Data urodzenia:</label><input type="date"/><br/>
-        <label>PESEL:</label><input type="number" maxlength="11"/><br/>
-        <label>Kod pocztowy:</label><input type="text" maxlength="6"/><br/>
-        <input type="reset"/><input type="submit"/>
+            <option>Inne</option>
+        </select><br />
+        <label>Uwagi:</label><textarea></textarea><br />
+        <label>Numer telefonu:</label><input type="tel" /><br />
+        <label>Data urodzenia:</label><input type="date" /><br />
+        <label>PESEL:</label><input type="number" maxlength="11" /><br />
+        <label>Kod pocztowy:</label><input type="text" maxlength="6" /><br />
+        <input type="reset" /><input type="submit" />
 
     </form>
 </body>
+
 </html>
