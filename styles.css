@@ -1,40 +1,4 @@
 
-body{
-	background-color:white;
-	margin: auto;
-	padding: auto;
-}
 
-/*Strona 1*/
-#conatinar
-
-/*Strona 2*/
-.obrazek{
-	width:100%;
-	height:100%;
-}
-.strona2 {
-	width:33%;
-	height:50%;
-	text-align: center;
-}
-
-/*Strona 3*/
-
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-form{
-	display: table;
-}
-input{
-	display: table-cell;
-}
-label{
-	display: table-row;
-}
 
 
