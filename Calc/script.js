@@ -7,9 +7,11 @@ function numberAppend(id) {
     var elem = id.innerText;
 
     if (elem != ".") {
-        if ((wynik.innerText == "" && regSign.test(elem)) || (regSign.test(wynik.innerText.slice(-1)) && regSign.test(elem))) {
-            alert("Two signs can't stand close to each other")
-        } else if (regSign.test(elem)) {
+        if ((regSign.test(wynik.innerText.slice(-1)) && regSign.test(elem))) {
+            alert("Two signs can't stand close to each other");
+        } else if((wynik.innerText == "" && regSign.test(elem))){
+            alert("You can't start with a sign");
+        }else if (regSign.test(elem)) {
             dotFlag = false;
             wynik.innerText += elem;
 
