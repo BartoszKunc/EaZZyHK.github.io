@@ -27,12 +27,15 @@ body {
 #wynik {
     position: relative;
     font-size: xx-large;
+    overflow: hidden;
 }
 
 #textBox {
     position: absolute;
     bottom: 1px;
     right: 1px;
+   
+   
 }
 
 #funcSpace {
