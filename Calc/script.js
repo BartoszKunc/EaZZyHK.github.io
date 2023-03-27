@@ -1,6 +1,6 @@
 
 const regNum = new RegExp(/\d/)
-const regSign = new RegExp(/[+\-/*.]/)
+const regSign = new RegExp(/[+\-/*.%]/)
 var dotFlag = false;
 function numberAppend(id) {
     var wynik = document.getElementById("textBox");
@@ -9,7 +9,7 @@ function numberAppend(id) {
     if (elem != ".") {
         if ((wynik.innerText == "" && regSign.test(elem)) || (regSign.test(wynik.innerText.slice(-1)) && regSign.test(elem))) {
             alert("Two signs can't stand close to each other")
-        } else if(regSign.test(elem)){
+        } else if (regSign.test(elem)) {
             dotFlag = false;
             console.log("Set dotFlag to false");
             wynik.innerText += elem;
@@ -18,18 +18,18 @@ function numberAppend(id) {
             wynik.innerText += elem;
         }
     } else {
-        if (!dotFlag && (wynik.innerText == "" || (regSign.test(wynik.innerText.slice(-1))&&wynik.innerText.slice(-1)!="."))) {
+        if (!dotFlag && (wynik.innerText == "" || (regSign.test(wynik.innerText.slice(-1)) && wynik.innerText.slice(-1) != "."))) {
             wynik.innerText += "0.";
-            dotFlag=true;
+            dotFlag = true;
             console.log("Set dotFlag to true");
-        }else if(!dotFlag && (wynik.innerText == "" || regNum.test(wynik.innerText.slice(-1)))){
+        } else if (!dotFlag && (wynik.innerText == "" || regNum.test(wynik.innerText.slice(-1)))) {
             wynik.innerText += elem;
         }
-        else if(dotFlag){
+        else if (dotFlag) {
             alert("Can't add another dot");
         }
-  
-        
+
+
 
 
     }
@@ -40,7 +40,7 @@ function cleanEntry() {
 }
 function clean() {
     var wynik = document.getElementById("textBox");
-    if(wynik.innerText.slice(-1)=="."){
+    if (wynik.innerText.slice(-1) == ".") {
         dotFlag = false
         console.log("Set dotFlag to false")
     }
@@ -53,9 +53,9 @@ function returnCalculation() {
     if (eval(wynik.innerText) == "Infinity") {
         alert("You can't divide by zero");
     }
-    else if(wynik.innerText=="") {
+    else if (wynik.innerText == "") {
         alert("Input is empty")
-    }else{
+    } else {
         wynik.innerText = eval(wynik.innerText)
     }
 
@@ -70,5 +70,5 @@ function negative() {
 
 }
 
-//Validation
+
 
