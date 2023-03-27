@@ -24,6 +24,7 @@ function numberAppend(id) {
             console.log("Set dotFlag to true");
         } else if (!dotFlag && (wynik.innerText == "" || regNum.test(wynik.innerText.slice(-1)))) {
             wynik.innerText += elem;
+            dotFlag = true;
         }
         else if (dotFlag) {
             alert("Can't add another dot");
