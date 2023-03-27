@@ -1,6 +1,6 @@
 
-const regNum = new RegExp(/\d/)
-const regSign = new RegExp(/[+\-/*.%]/)
+const regNum = new RegExp(/\d/);
+const regSign = new RegExp(/[+\-/*.%]/);
 var dotFlag = false;
 function numberAppend(id) {
     var wynik = document.getElementById("textBox");
@@ -33,14 +33,14 @@ function numberAppend(id) {
 }
 function cleanEntry() {
     document.getElementById("textBox").innerText = "";
-    dotFlag = false
+    dotFlag = false;
 }
 function clean() {
     var wynik = document.getElementById("textBox");
     if (wynik.innerText.slice(-1) == ".") {
-        dotFlag = false
+        dotFlag = false;
     }
-    wynik.innerText = wynik.innerText.slice(0, -1)
+    wynik.innerText = wynik.innerText.slice(0, -1);
 
 }
 
@@ -50,9 +50,10 @@ function returnCalculation() {
         alert("You can't divide by zero");
     }
     else if (wynik.innerText == "") {
-        alert("Input is empty")
+        alert("Input is empty");
     } else {
-        wynik.innerText = eval(wynik.innerText)
+        wynik.innerText = eval(wynik.innerText);
+        dotFlag = false;
     }
 
 }
