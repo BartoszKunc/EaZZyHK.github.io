@@ -1,5 +1,4 @@
 body {
-
     margin: auto;
     padding: auto;
     height: 100%;
@@ -26,7 +25,7 @@ body {
 
 #wynik {
     position: relative;
-    font-size: 50px;
+    font-size: 37px;
     overflow: hidden;
 }
 
