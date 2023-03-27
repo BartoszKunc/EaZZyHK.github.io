@@ -11,7 +11,6 @@ function numberAppend(id) {
             alert("Two signs can't stand close to each other")
         } else if (regSign.test(elem)) {
             dotFlag = false;
-            console.log("Set dotFlag to false");
             wynik.innerText += elem;
 
         } else {
@@ -21,7 +20,6 @@ function numberAppend(id) {
         if (!dotFlag && (wynik.innerText == "" || (regSign.test(wynik.innerText.slice(-1)) && wynik.innerText.slice(-1) != "."))) {
             wynik.innerText += "0.";
             dotFlag = true;
-            console.log("Set dotFlag to true");
         } else if (!dotFlag && (wynik.innerText == "" || regNum.test(wynik.innerText.slice(-1)))) {
             wynik.innerText += elem;
             dotFlag = true;
@@ -29,10 +27,6 @@ function numberAppend(id) {
         else if (dotFlag) {
             alert("Can't add another dot");
         }
-
-
-
-
     }
 }
 function cleanEntry() {
@@ -43,7 +37,6 @@ function clean() {
     var wynik = document.getElementById("textBox");
     if (wynik.innerText.slice(-1) == ".") {
         dotFlag = false
-        console.log("Set dotFlag to false")
     }
     wynik.innerText = wynik.innerText.slice(0, -1)
 
