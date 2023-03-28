@@ -52,8 +52,9 @@ function returnCalculation() {
     else if (wynik.innerText == "") {
         alert("Input is empty");
     } else {
-        wynik.innerText = eval(wynik.innerText);
-        dotFlag = false;
+wynik.innerText = eval(wynik.innerText);
+        if(!regSign.test(wynik.innerText)){dotFlag = false;}
+        
     }
 
 }
