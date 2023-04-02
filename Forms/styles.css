@@ -1,0 +1,52 @@
+body {
+    margin: auto;
+    padding: auto;
+    height: 100%;
+    width: 100%;
+    
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#errorBox{
+    border: 1px solid;
+    float:left;
+    width: 33%;
+    text-align: center;
+    
+}
+#info{
+    border: 1px solid;
+    float:left;
+    width: 33%;
+    text-align: center;
+
+}
+#container {
+    border: 1px solid;
+    width: 33%;
+    float:left;
+    text-align: center;
+}
+#container>* {
+    margin: auto;
+}
+form {
+    display: table;
+}
+
+input {
+    display: table-cell;
+}
+
+label {
+    display: table-row;
+}
+textarea { 
+    width:90%;
+    resize: none;
+ }
